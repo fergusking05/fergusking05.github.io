@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #d9e7dd;
+  color: white;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 18px 35px;
+  background: rgba(20, 40, 35, 0.85);
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+  border-bottom: 2px solid rgba(255,255,255,0.5);
+}
+
+.logo {
+  font-size: 24px;
+}
+
+nav a {
+  color: white;
+  margin-left: 18px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 110px 50px 60px;
+  border-bottom: 3px dashed rgba(255,255,255,0.6);
+}
+
+.dark-green {
+  background: #29483d;
+}
+
+.sky-blue {
+  background: #7da8b7;
+}
+
+.mountain {
+  background: #6f8a7a;
+}
+
+.forest {
+  background: #486b4d;
+}
+
+.sunset {
+  background: #b58b65;
+}
+
+h1 {
+  font-size: 70px;
+  margin: 30px 0;
+}
+
+h2 {
+  font-size: 55px;
+  margin-bottom: 35px;
+}
+
+.small-text {
+  font-size: 18px;
+}
+
+.image-placeholder {
+  border: 3px dashed white;
+  background: rgba(255,255,255,0.25);
+  height: 280px;
+  max-width: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin: 25px 0;
+}
+
+.image-placeholder.large {
+  height: 330px;
+  max-width: 850px;
+}
+
+.content-box {
+  background: rgba(255,255,255,0.7);
+  color: #111;
+  padding: 25px;
+  border-radius: 20px;
+  max-width: 650px;
+  margin: 25px 0;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+  align-items: center;
+}
+
+.big-number {
+  font-size: 70px;
+  text-align: center;
+}
+
+.score-list {
+  max-width: 650px;
+}
+
+.score-box {
+  background: rgba(255,255,255,0.65);
+  color: #111;
+  padding: 22px;
+  margin-bottom: 18px;
+  border-radius: 15px;
+  border: 2px solid white;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.card {
+  background: rgba(255,255,255,0.75);
+  color: #111;
+  padding: 20px;
+  border-radius: 18px;
+  min-height: 330px;
+}
+
+.small-image {
+  height: 90px;
+  background: rgba(120, 180, 130, 0.6);
+  border: 2px dashed #555;
+  border-radius: 14px;
+  margin-bottom: 20px;
+}
+
+.faq-box p {
+  border-bottom: 1px solid #777;
+  padding-bottom: 12px;
+}
+
+footer {
+  background: #1f302a;
+  padding: 25px;
+  color: white;
+}
+
+@media (max-width: 800px) {
+  .two-column,
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 38px;
+  }
+
+  nav a {
+    margin-left: 8px;
+    font-size: 12px;
+  }
+}
