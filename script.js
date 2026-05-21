@@ -1,3 +1,1 @@
-console.log("script.js is linked correctly");
-
-alert("Your JavaScript is connected");
+// no script needed for the simplified version
